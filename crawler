@@ -1,0 +1,17 @@
+- 👋 Hi, I’m @yixian185
+- 👀 I’m interested in ...
+- 🌱 I’m currently learning ...
+- 💞️ I’m looking to collaborate on ...
+- 📫 How to reach me ...
+
+<!---
+yixian185/yixian185 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+You can click the Preview link to take a look at your changes.
+--->
+import requests
+url="https://www.sogou.com/web?query=mac"
+headers={"User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36 Edg/106.0.1370.47"}   #以字典的形式设置请求头，处理反爬
+resp=requests.get(url,headers=headers)
+print(resp)  
+print(resp.text) 
+resp.close() 
